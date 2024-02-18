@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Tag() {
+function Tag(props){
   return (
-    <div className='tag hover'>Tag</div>
+    <div className='tag hover' onClick={()=>props.onDelete(props.id)}>
+      <p>{props.title}</p>
+    </div>
   )
 }
 

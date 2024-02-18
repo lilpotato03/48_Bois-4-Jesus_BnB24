@@ -1,17 +1,12 @@
 import React from 'react'
 import { useState } from 'react'
-function FilterAdd() {
+function FilterAdd(props) {
     const [tag,setTag]=useState('')
-    const [tagList,setTagList]= useState([]);
     function handleSubmit(event) {
-        const {value}=event.target;
-        setTagList((prev)=>{
-            return[
-                ...prev,      
-                value
-        ]
+        props.onAdd(tag)
+        setTag(()=>{
+            return('');
         })
-        console.log(tagList)
         event.preventDefault();
     }
       function handleChange(event) {
