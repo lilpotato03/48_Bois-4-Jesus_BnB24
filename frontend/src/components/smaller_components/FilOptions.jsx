@@ -1,8 +1,8 @@
 import React from 'react'
 
-function FilOptions() {
+function FilOptions(props) {
   return (
-    <div className='fil_options'><h2>Filter</h2></div>
+    <div className='fil_options'><h2>{props.title}</h2></div>
   )
 }
 

@@ -71,14 +71,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.searchbar{
-    background-color: rgba(168, 168, 168, 0.272);
-    box-shadow: 1px 2px 5px 1px rgba(35, 35, 35, 0.274);
-    height: 8vh;
-    width: 100%;
-    border-radius: 0.5rem;
-    display: flex;
-}
+
 .card-row{
     width: 100%;
     height: 100%;
@@ -147,9 +140,46 @@ ul{
 .addTag button{
     background-color: rgb(37, 221, 147);
     box-shadow: 1px 2px 5px 1px rgba(35, 35, 35, 0.274);
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     border: none;
     justify-content: center;
     align-items: center;
-    color: rgb(37, 37, 37);}
+    color: rgb(254, 254, 254);
+}
+
+.addTag input{
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    color: antiquewhite;
+
+}
+ .searchbar{
+        background-color: rgba(168, 168, 168, 0.272);
+        box-shadow: 1px 2px 5px 1px rgba(35, 35, 35, 0.274);
+        height: 8vh;
+        width: 100%;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 1rem;
+        align-items: center;
+}
+.searchbar input{
+    background-color:rgba(168, 168, 168, 0);
+    border: none;
+    color: antiquewhite;
+    height: 60%;
+    width: 70%;
+}
+input:focus{
+    outline: none;
+}
+.searchButton{
+    height: 60%;
+    color: white;
+    background-color:rgb(37, 221, 147);
+    border: none;
+    box-shadow: 1px 2px 5px 1px rgba(35, 35, 35, 0.274);
+    border-radius: 0.5rem;
+}
 

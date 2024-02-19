@@ -1,7 +1,8 @@
 import React from 'react'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import AppContext,{MyContext} from '../../context'
 function FilterAdd(props) {
-    const [tag,setTag]=useState('')
+    const {tag,setTag}=useContext(MyContext)
     function handleSubmit(event) {
         props.onAdd(tag)
         setTag(()=>{
@@ -18,7 +19,7 @@ function FilterAdd(props) {
     
     return (
         <form onSubmit={handleSubmit} className='addTag'>
-            <input type="text" name='tag' value={tag} onChange={handleChange}/>
+            <input type="text" name='tag' value={tag} placeholder="Add Tags..." onChange={handleChange}/>
             <button className='hover' type='submit'>Add</button>
         </form>
     

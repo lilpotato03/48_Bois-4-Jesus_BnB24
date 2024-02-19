@@ -1,12 +1,13 @@
-import React from 'react'
+import React,{useState,useContext} from 'react'
+import AppContext,{MyContext} from '../../context'
 import FilOptions from '../smaller_components/FilOptions'
 import Tag from '../smaller_components/Tag'
 import FilterAdd from '../smaller_components/FilterAdd'
-import { useState } from 'react'
 function Filter() {
-  const [tagList,setTagList]=useState([])
+  const {tagList,setTagList}=useContext(MyContext);
+  console.log(MyContext)
   function addTag(title){
-    setTagList((prev)=>{
+    setTagList((prev)=>{  
       return[
         ...prev,
         title
@@ -35,7 +36,7 @@ function Filter() {
       <div className="upload hover">
         <h1>UPLOAD</h1>
       </div>
-      <FilOptions />
+      <FilOptions title="Filter"/>
       <FilterAdd onAdd={addTag}/>
       <div className='tagCont'>
         {tagList.map(genTags)}

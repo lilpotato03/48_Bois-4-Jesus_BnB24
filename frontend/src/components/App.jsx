@@ -1,12 +1,17 @@
 import Navbar from "./sections/Navbar";
 import Main from "./sections/Main";
+import AppContext from '../context'
+import React,{useState} from "react";
 
 function App() {
+  
   return (
-    <div className="App">
-      <Navbar />
-      <Main />
-    </div>
+    <AppContext>
+      <div className="App">
+        <Navbar />
+        <Main />
+      </div>
+    </AppContext>
   );
 }
 
