@@ -5,7 +5,7 @@ body{
 }
 
 .App{
-    width: 97vw;
+    width: 97.5vw;
     height: 94vh;
     background-color: rgb(23, 23, 23);
     color: white;
@@ -25,7 +25,7 @@ body{
     display: flex;
 }
 .main{
-    height: 100%;
+    height: 98%;
     width: 100%;
     display: flex;
     gap: 1rem;
@@ -62,8 +62,7 @@ body{
 }
 
 .fil_options{
-    background-color: rgb(66, 66, 66);
-    box-shadow: 1px 2px 5px 1px rgba(35, 35, 35, 0.274);
+    background-color: rgba(66, 66, 66, 0);
     height: 6vh;
     width: 70%;
     border-radius: 0.5rem;
@@ -79,16 +78,28 @@ body{
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     overflow: scroll;
+    align-items: center;
+}
+.cards-row1{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    text-align: center;
+}
+.cards-row2{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
 }
 .cards{
     background-color: rgba(168, 168, 168, 0.272);
     box-shadow: 1px 2px 5px 1px rgba(35, 35, 35, 0.274);
     border-radius: 0.5rem;
     display: flex;
-    height: 48%;
-    width: 23%;
+    height: 20%;
+    width: 94%;
     font-size:15px;
     padding-inline: 1rem;
     flex-direction: column;
@@ -99,6 +110,13 @@ body{
 }
 .cards *{
     margin-block: 0.2rem;
+}
+.cards li{
+    background-color:rgb(37, 221, 147) ;
+    padding-inline: 0.5rem;
+    padding-block:0.1rem;
+    box-shadow: 1px 2px 5px 1px rgba(35, 35, 35, 0.274);
+    border-radius: 0.5rem;
 }
 ul{
     list-style: none;

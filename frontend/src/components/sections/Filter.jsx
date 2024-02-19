@@ -36,7 +36,7 @@ function Filter() {
       <div className="upload hover">
         <h1>UPLOAD</h1>
       </div>
-      <FilOptions title="Filter"/>
+      <FilOptions title="Skills"/>
       <FilterAdd onAdd={addTag}/>
       <div className='tagCont'>
         {tagList.map(genTags)}
